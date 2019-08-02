@@ -1,0 +1,16 @@
+#!/bin/sh
+set -e
+package_name=flash-javaws-widevine-fonts
+mkdir -p "/usr/share/dpkgdivert/flash-javaws-widevine-fonts"
+case "$1" in
+  install)
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/flash-javaws-widevine-fonts/usrshareapplicationsitweb-settings.desktop" --rename "/usr/share/applications/itweb-settings.desktop"
+    ;;
+  upgrade)
+if [ "$(dpkg-divert --list "/usr/share/applications/itweb-settings.desktop")" = "" ]
+then
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/flash-javaws-widevine-fonts/usrshareapplicationsitweb-settings.desktop" --rename "/usr/share/applications/itweb-settings.desktop"
+fi
+;;
+esac
+exit 0

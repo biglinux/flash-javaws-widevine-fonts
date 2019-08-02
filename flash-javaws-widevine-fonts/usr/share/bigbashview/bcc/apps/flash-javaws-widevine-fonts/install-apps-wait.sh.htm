@@ -1,0 +1,74 @@
+#!/bin/bash
+
+export TEXTDOMAINDIR="/usr/share/locale"
+export TEXTDOMAIN=bigflash-javaws-widevine-fonts
+
+# Import BigControlCenter base modules / Importa os módulos básicos do BigControlCenter
+# That's include jquery and materialize / Isso inclui o jquery e o materialize
+# http://materializecss.com/
+. /usr/share/bigbashview/bcc/shell/base.sh
+
+
+#Title/Description variables
+bcc_title="Widevine, javaws, flash e fontes"
+bcc_description=$""
+# To disable logo use: bcc_logo="no"
+bcc_logo="logo.png"
+
+# About variables
+# To disable about use: bcc_about="no"
+bcc_about="yes"
+bcc_about_license=$"GPL v2 or greater"
+bcc_about_by=$"Bruno Gonçalves"
+bcc_about_release_date=$"15/07/2019"
+bcc_about_url_code=$"https://github.com/biglinux/flash-javaws-widevine-fonts"
+bcc_about_url_project=$"https://www.biglinux.com.br"
+
+# Print header in screen
+bcc_header
+
+
+
+echo '<style type="text/css">
+.bigwaiting {
+color: #fff;
+padding-top: 19px !important;
+height: 90px !important;
+font-weight: bold;
+};
+</style>'
+
+###############
+# Start Content
+
+echo '</div>'
+echo '<div id="bcc_footer" class="bigwaiting"><center>'
+echo $"Aguarde..."
+echo "<br><br>"
+
+
+
+###################
+# Close content div
+echo '</div>'
+
+
+
+echo '</body>'
+
+# Start javascript
+echo '<script type="text/javascript">
+function sleep (time) {
+  return new Promise((resolve) => setTimeout(resolve, time));
+}'
+
+# Fix to interface don't crash
+echo 'sleep(200).then(() => {'
+
+
+# Redirect to another script
+echo "window.location.href = \"apps-manage.sh.htm?$1\""
+
+# Close javascript
+echo '});'
+echo '</script>'

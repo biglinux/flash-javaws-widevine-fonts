@@ -1,0 +1,166 @@
+#!/bin/bash
+
+export TEXTDOMAINDIR="/usr/share/locale"
+export TEXTDOMAIN=bigflash-javaws-widevine-fonts
+
+# Import BigControlCenter base modules / Importa os módulos básicos do BigControlCenter
+# That's include jquery and materialize / Isso inclui o jquery e o materialize
+# http://materializecss.com/
+. /usr/share/bigbashview/bcc/shell/base.sh
+
+
+#Title/Description variables
+bcc_title="Widevine, javaws, flash e fontes"
+bcc_description=$""
+# To disable logo use: bcc_logo="no"
+bcc_logo="logo.png"
+
+# About variables
+# To disable about use: bcc_about="no"
+bcc_about="yes"
+bcc_about_license=$"GPL v2 or greater"
+bcc_about_by=$"Bruno Gonçalves"
+bcc_about_release_date=$"15/07/2019"
+bcc_about_url_code=$"https://github.com/biglinux/flash-javaws-widevine-fonts"
+bcc_about_url_project=$"https://www.biglinux.com.br"
+
+# Print header in screen
+bcc_header
+
+
+echo '<style>
+.row {
+  margin-bottom: 0px !important;
+}
+
+
+
+a {
+  line-height: 1.8;
+}
+
+.card .card-title {
+  font-size: 21px !important;
+  text-align: center;
+  color: darkblue;
+}
+
+
+.collapsible-body {
+  margin-top: 0px !important;
+  padding-left: 50px !important;
+  padding-top: 1px !important;
+  padding-bottom: 16px !important;
+  background-color: #f5f5f5;
+  line-height: 2;
+}
+
+
+
+</style>'
+
+###############
+# Start Content
+
+echo '<body>'
+echo '<ul class="collapsible">'
+echo '<li><div class="collapsible-header">' $"Fontes"
+
+if [ -e "/usr/lib/msttcorefonts/update-ms-fonts" ]; then
+
+  echo '<span class="badge">' $"Instalado" '</span>'
+  echo '</div><div class="collapsible-body"><p><center>'
+
+    echo $"O pacote Microsoft True Type Core Fonts inclui as fontes mais utilizadas em sites e documentos do Office." '<br><br>'
+
+    echo '<a href="install-apps-wait.sh.htm?remove_font=1" class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip="Fontes inclusas: Andale Mono, Arial, Comic Sans MS, Courier New, Georgia, Impact, Times New Roman, Trebuchet, Verdana e Webdings.">' $"Remover o pacote Microsoft True Type Core Fonts." '</label></a>'
+else
+  echo '<span class="badge">' $"Não está instalado" '</span>'
+  echo '</div><div class="collapsible-body"><p>'
+    echo '<a href="install-apps-wait.sh.htm?install_font=1" class="blue-text text-darken-4 text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip="Fontes inclusas: Andale Mono, Arial, Comic Sans MS, Courier New, Georgia, Impact, Times New Roman, Trebuchet, Verdana e Webdings.">' $"Instalar o pacote Microsoft True Type Core Fonts" '</label></a>'
+fi
+
+echo '</center>'
+echo '</p></div></li>'
+
+echo '<li><div class="collapsible-header">' $"Flash Player"
+
+
+if [ -e "/usr/lib/adobe-flashplugin/libflashplayer.so" ] ; then
+        echo '<span class="badge">' $"Instalado" '</span>'
+        echo '</div><div class="collapsible-body"><p>'
+        echo '<a href="install-apps-wait.sh.htm?remove_flash=1" class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip="Este é um plugin cada vez menos utilizado, porém, diversos sites de jogos online ainda dependem do Flash Player."><center>' $"O plugin Flash Player está instalado.<br>Clique aqui para remover." '</label></a>'
+    else
+        echo '<span class="badge">' $"Não está instalado" '</span>'
+        echo '</div><div class="collapsible-body"><p>'
+        echo '<a href="install-apps-wait.sh.htm?install_flash=1" class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip="Este é um plugin cada vez menos utilizado, porém, diversos sites de jogos online ainda dependem do Flash Player."><center>' $"O plugin Flash Player não está instalado.<br>Clique aqui para instalar." '</label></a>'
+    fi
+
+echo '</center></p></div></li>'
+
+
+
+echo '<li><div class="collapsible-header">' $"Widevine"
+
+
+
+   echo '<span class="tooltipped" data-position="top" data-delay="50" data-tooltip="Este plugin adiciona suporte a DRM nos navegadores, por questões de licenciamento, ele não pode vir instalado no sistema, porém, ao abrir o navegador Firefox, o mesmo faz o download do plugin automaticamente. É necessário para abrir sites com conteúdo DRM, entre eles, os mais conhecidos são: Netflix, Amazon Prime Vídeo e Spotify.">'
+   
+    
+if [ -e "/usr/lib/chromium-browser/libwidevinecdm.so" ]; then
+    echo '<span class="badge">' $"Instalado" '</span>'
+    echo '</div><div class="collapsible-body"><p>'
+    echo $"Para adicionar este plugin no navegador Chromium, abra o Firefox por alguns minutos e então abra o Chromium, uma janela irá perguntar se deve adicionar o plugin."
+    echo '<br><center>'
+    echo '<a href="install-apps-wait.sh.htm?remove_widevine=1" class="blue-text text-darken-4">' $"O plugin já está ativo no navegador Chromium.<br>Clique aqui para remove-lo." '</label></a></center>'
+else
+    echo '<span class="badge">' $"Não está instalado" '</span>'
+    echo '</div><div class="collapsible-body"><p>'
+    echo $"Para adicionar este plugin no navegador Chromium, abra o Firefox por alguns minutos e então abra o Chromium, uma janela irá perguntar se deve adicionar o plugin."
+    echo '<br><br>'
+    echo $"Este plugin não está ativo no navegador Chromium." '</label></a></center>'
+fi
+    
+echo '</p></div></li>'
+
+
+echo '<li><div class="collapsible-header">' $"Javaws"
+
+
+if [ -e "/usr/lib/icedtea-web/bin/javaws" ] ; then
+    echo '<span class="badge">' $"Instalado" '</span>'
+    echo '</div><div class="collapsible-body"><p><center>'
+          echo $"Também chamado de Icedtea ou Netx, abre arquivos no formato JNLP."
+          echo "<br><br>"
+          
+       echo '<a href="install-apps-wait.sh.htm?config_javaws=1" class="blue-text text-darken-4">' $"Este plugin já está instalado, clique aqui para configurar." '</label></a>'
+    else
+    echo '<span class="badge">' $"Não está instalado" '</span>'
+    echo '</div><div class="collapsible-body"><p>'
+    echo $"Também chamado de Icedtea ou Netx, abre arquivos no formato JNLP."
+    echo "<br><br>"
+          
+       echo '<a href="install-apps-wait.sh.htm?install_javaws=1" class="blue-text text-darken-4">' $"Clique aqui para instalar este plugin." '</label></a>'
+fi
+
+echo '</p></div></li>'
+
+
+
+###################
+# Close content div
+echo '</div>'
+
+##############
+# Start footer
+echo '<div id="bcc_footer">'
+      echo '<div id="bcc_footer_right">'
+        echo '<a href="/usr/share/bigbashview/close.sh" class="waves-effect waves-light btn blue-grey lighten-1"><img src=cancel.png>'$"Fechar"'</a>'
+      echo '</div>'
+echo '</div>'
+echo '</form>'
+
+
+#########
+# The end
+echo '</body>'

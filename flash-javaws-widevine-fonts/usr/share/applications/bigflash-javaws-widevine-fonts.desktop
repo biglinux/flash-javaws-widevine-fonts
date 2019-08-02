@@ -1,0 +1,10 @@
+[Desktop Entry]
+Categories=Network;
+Exec=bigflash-javaws-widevine-fonts
+Icon=plugins
+Name[pt_BR]=Widevine, javaws, flash e fontes
+Name=Widevine, javaws, flash and fonts
+StartupNotify=true
+Terminal=false
+Type=Application
+StartupWMClass=bigwidevine
