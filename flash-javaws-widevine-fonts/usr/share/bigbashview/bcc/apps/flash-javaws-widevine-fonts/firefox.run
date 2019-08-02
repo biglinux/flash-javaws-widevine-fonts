@@ -1,0 +1,2 @@
+#!/bin/sh
+firefox https://bitmovin.com/demos/drm

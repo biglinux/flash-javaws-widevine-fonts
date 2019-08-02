@@ -6,7 +6,8 @@ d1ad007a8ccda8f7f5a179ad583f411e  DEBIAN/postrm
 cb40c9c34f1b116e3506c9199df2f193  usr/share/bigbashview/bcc/apps/flash-javaws-widevine-fonts/apps-manage.sh
 779d56db09feb0e9db0b3a1ac8e754a4  usr/share/bigbashview/bcc/apps/flash-javaws-widevine-fonts/apps-manage.sh.htm
 4f7d55e235f4a7b6438ac1f4dca16bd3  usr/share/bigbashview/bcc/apps/flash-javaws-widevine-fonts/cancel.png
-5fe0ee3404dcdfdbb5e0fbc25ecac2a6  usr/share/bigbashview/bcc/apps/flash-javaws-widevine-fonts/index.sh.htm
+099af05d78a17a98103fd29dabbf9ccd  usr/share/bigbashview/bcc/apps/flash-javaws-widevine-fonts/firefox.run
+64c963181637caa3db9388294e922d82  usr/share/bigbashview/bcc/apps/flash-javaws-widevine-fonts/index.sh.htm
 440fb3b7ca293947c1f45b60cc58327e  usr/share/bigbashview/bcc/apps/flash-javaws-widevine-fonts/install-apps-wait.sh.htm
 dcefd8a89185732a1e1eac3bf338cf23  usr/share/bigbashview/bcc/apps/flash-javaws-widevine-fonts/logo.png
 c30cd977ccb0d1eca5aeb970fef5b003  usr/share/bigbashview/bcc/apps/flash-javaws-widevine-fonts/ok.png
