@@ -1,7 +1,7 @@
 [Desktop Entry]
 Categories=Network;
 Exec=bigflash-javaws-widevine-fonts
-Icon=plugins
+Icon=/usr/share/bigbashview/bcc/apps/flash-javaws-widevine-fonts/logo.png
 Name[pt_BR]=Widevine, javaws, flash e fontes
 Name=Widevine, javaws, flash and fonts
 StartupNotify=true
