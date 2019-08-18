@@ -1,5 +1,5 @@
 Package: flash-javaws-widevine-fonts
-Version: 1.0.0-1big4
+Version: 1.0.0-1big5
 Depends: synaptic, bigbashview
 Architecture: all
 Maintainer: Bruno Goncalves <www.biglinux.com.br>
