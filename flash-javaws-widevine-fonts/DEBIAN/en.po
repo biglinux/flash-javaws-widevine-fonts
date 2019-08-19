@@ -1,0 +1,126 @@
+# Portuguese translations for flash-javaws-widevine-fonts package.
+# Copyright (C) 2019 THE flash-javaws-widevine-fonts'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the flash-javaws-widevine-fonts package.
+# Automatically generated, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: flash-javaws-widevine-fonts\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-18 23:02-0300\n"
+"PO-Revision-Date: 2019-08-19 03:28-0300\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.2.1\n"
+
+msgid "GPL v2 or greater"
+msgstr "The GPL v2 or greater"
+
+msgid "Bruno Gonçalves"
+msgstr ""
+
+msgid "15/07/2019"
+msgstr ""
+
+msgid "https://github.com/biglinux/flash-javaws-widevine-fonts"
+msgstr ""
+
+msgid "https://www.biglinux.com.br"
+msgstr ""
+
+msgid "Aguarde..."
+msgstr "Wait..."
+
+msgid "Fontes"
+msgstr "Microsoft TrueType core fonts"
+
+msgid "Instalado"
+msgstr "Installed"
+
+msgid ""
+"O pacote Microsoft True Type Core Fonts inclui as fontes mais utilizadas em "
+"sites e documentos do Office."
+msgstr ""
+"In the package of Microsoft True Type Core Fonts includes all the fonts "
+"that are used on web sites, and Office documents."
+
+msgid "Clique aqui para remover o pacote Microsoft True Type Core Fonts."
+msgstr "Click here to remove the Microsoft True Type Core Fonts."
+
+msgid "Não está instalado"
+msgstr "It is not installed"
+
+msgid "Instalar o pacote Microsoft True Type Core Fonts"
+msgstr "To install the Microsoft True Type Core Fonts"
+
+msgid "Flash Player"
+msgstr "Flash Player"
+
+msgid "O plugin Flash Player está instalado.<br>Clique aqui para remover."
+msgstr "The Flash Player plugin is installed.<br>Click here to remove it."
+
+msgid ""
+"O plugin Flash Player não está instalado.<br>Clique aqui para instalar."
+msgstr ""
+"The Flash Player plugin is not installed.<br> Click here to install it."
+
+msgid "Widevine"
+msgstr "Widevine"
+
+msgid ""
+"O plugin já está ativo no navegador Chromium.<br>Clique aqui para remove-lo."
+msgstr ""
+"The plugin is already enabled in Chromium browser.<br>Click here to remove "
+"it."
+
+msgid ""
+"Este plugin adiciona suporte a DRM nos navegadores, por questões de "
+"licenciamento, ele não pode vir instalado no sistema, porém, ao abrir o "
+"navegador Firefox, o mesmo faz o download do plugin automaticamente. É "
+"necessário em sites com conteúdo DRM, entre eles, os mais conhecidos são: "
+"Netflix, Amazon Prime Vídeo e Spotify."
+msgstr ""
+"This is a plugin that adds support to the DRM in the browser, on the "
+"licensing issue, it may not be installed on the system, however, when I "
+"open up the Firefox web browser, and the same is to download the plugin "
+"automatically. It is necessary to click on the DRM, they also have the most "
+"well-known are: Netflix, Amazon Prime Video, and Spotify."
+
+msgid ""
+"Para adicionar este plugin no navegador Chromium, abra o Firefox por alguns "
+"minutos, pois ele fará o download do Widevine automaticamente, então abra o "
+"Chromium, uma janela irá perguntar se deve adicionar o plugin baixado pelo "
+"Firefox."
+msgstr ""
+"To add to this plugin in the Chromium browser, open Firefox in it for a few "
+"minutes as it will download the Widevine automatically, then open up "
+"Chromium, go to the windows it will ask you if you need to add the plugin "
+"was downloaded by the Firefox browser."
+
+msgid ""
+"Este plugin não está ativo no navegador Chromium, clique aqui para testar "
+"no Firefox."
+msgstr ""
+"This plugin is not enabled in Chromium browser), click right here to test "
+"it in Firefox."
+
+msgid "Javaws"
+msgstr "Javaws"
+
+msgid "Também chamado de Icedtea ou Netx, abre arquivos no formato JNLP."
+msgstr ""
+"Also called a Decision or Netx, you open the files in the format of JNLP."
+
+msgid "Este plugin já está instalado, clique aqui para configurar."
+msgstr "This plug-in is already installed, click here to set it up."
+
+msgid "Clique aqui para instalar este plugin."
+msgstr "Click here to install this plug-in."
+
+msgid "Fechar"
+msgstr "Close"

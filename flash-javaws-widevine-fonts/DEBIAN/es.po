@@ -1,0 +1,130 @@
+# Portuguese translations for flash-javaws-widevine-fonts package.
+# Copyright (C) 2019 THE flash-javaws-widevine-fonts'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the flash-javaws-widevine-fonts package.
+# Automatically generated, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: flash-javaws-widevine-fonts\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-18 23:02-0300\n"
+"PO-Revision-Date: 2019-08-19 03:28-0300\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.2.1\n"
+
+msgid "GPL v2 or greater"
+msgstr "La GPL v2 o superior"
+
+msgid "Bruno Gonçalves"
+msgstr ""
+
+msgid "15/07/2019"
+msgstr ""
+
+msgid "https://github.com/biglinux/flash-javaws-widevine-fonts"
+msgstr ""
+
+msgid "https://www.biglinux.com.br"
+msgstr ""
+
+msgid "Aguarde..."
+msgstr "Por favor espere..."
+
+msgid "Fontes"
+msgstr "Microsoft TrueType core fonts"
+
+msgid "Instalado"
+msgstr "Instalado"
+
+msgid ""
+"O pacote Microsoft True Type Core Fonts inclui as fontes mais utilizadas em "
+"sites e documentos do Office."
+msgstr ""
+"El paquete de Microsoft truetype Core Fonts que incluye a la mayoría de las "
+"fuentes utilizadas en los sitios web y los documentos de la oficina."
+
+msgid "Clique aqui para remover o pacote Microsoft True Type Core Fonts."
+msgstr ""
+"Haga clic aquí para eliminar el paquete de Microsoft truetype Core Fonts."
+
+msgid "Não está instalado"
+msgstr "No se ha instalado"
+
+msgid "Instalar o pacote Microsoft True Type Core Fonts"
+msgstr "Para Instalar el paquete de Microsoft truetype Core Fonts"
+
+msgid "Flash Player"
+msgstr "El Reproductor De Flash"
+
+msgid "O plugin Flash Player está instalado.<br>Clique aqui para remover."
+msgstr ""
+"Con el plugin de Flash Player está instalado.<br>haga Clic aquí para "
+"eliminar."
+
+msgid ""
+"O plugin Flash Player não está instalado.<br>Clique aqui para instalar."
+msgstr ""
+"Con el plugin de Flash Player no está instalado.<br>Haga click aquí para "
+"descargar."
+
+msgid "Widevine"
+msgstr "Widevine"
+
+msgid ""
+"O plugin já está ativo no navegador Chromium.<br>Clique aqui para remove-lo."
+msgstr ""
+"En el complemento, ya se encuentra activo en el navegador Chromium.<br>haga "
+"Clic aquí para quitar de él."
+
+msgid ""
+"Este plugin adiciona suporte a DRM nos navegadores, por questões de "
+"licenciamento, ele não pode vir instalado no sistema, porém, ao abrir o "
+"navegador Firefox, o mesmo faz o download do plugin automaticamente. É "
+"necessário em sites com conteúdo DRM, entre eles, os mais conhecidos são: "
+"Netflix, Amazon Prime Vídeo e Spotify."
+msgstr ""
+"Este plugin incluye el soporte de la tecnología DRM de los navegadores de "
+"la web, debido a problemas de licencia, que no puede ser instalado en el "
+"sistema, sin embargo, al abrir el navegador Firefox, de la misma forma que "
+"la descarga del plug-in de forma automática. Es necesario que en los sitios "
+"con contenido de DRM, entre ellos, los más conocidos son: el de Netflix, "
+"Amazon Prime, el Video y el Final."
+
+msgid ""
+"Para adicionar este plugin no navegador Chromium, abra o Firefox por alguns "
+"minutos, pois ele fará o download do Widevine automaticamente, então abra o "
+"Chromium, uma janela irá perguntar se deve adicionar o plugin baixado pelo "
+"Firefox."
+msgstr ""
+"Para añadir el plugin para el navegador que Uso, que se abra en el "
+"navegador Firefox, por un par de minutos, ya que se realizará la descarga "
+"de Widevine de forma automática, a continuación, abra el Uso de una ventana "
+"que le preguntará si se debe agregar el plugin de descarga por Internet."
+
+msgid ""
+"Este plugin não está ativo no navegador Chromium, clique aqui para testar "
+"no Firefox."
+msgstr ""
+"Este plug-in no está activado en el navegador Chromium, haz click aquí para "
+"poner a prueba en la web."
+
+msgid "Javaws"
+msgstr "Javaws"
+
+msgid "Também chamado de Icedtea ou Netx, abre arquivos no formato JNLP."
+msgstr "También se llama Total o Netx, abre el archivo en el formato de JNLP."
+
+msgid "Este plugin já está instalado, clique aqui para configurar."
+msgstr "Este plug-in, ya que está instalado, haga clic aquí para hacerlo."
+
+msgid "Clique aqui para instalar este plugin."
+msgstr "Haz clic aquí para descargar el plug-in."
+
+msgid "Fechar"
+msgstr "Cerrar"
