@@ -1,5 +1,4 @@
 #!/bin/bash
-
 windowID="$(xprop -root '\t$0' _NET_ACTIVE_WINDOW | cut -f 2)"
     
 if [ "$1" = "install-font" ]; then
@@ -35,4 +34,8 @@ fi
 if [ "$1" = "install-javaws" ]; then
     echo "icedtea-netx" | sed 's/$/\ /;s/--install //' | sed 's/\ /\ install\r\n/g' > /tmp/bigsynaptic$$
     synaptic --parent-window-id "$windowID" --set-selections --non-interactive -o Synaptic::closeZvt=true --hide-main-window < /tmp/bigsynaptic$$
+fi
+
+if [ "$1" = "install-widevine" ]; then
+    /usr/share/bigbashview/bcc/apps/flash-javaws-widevine-fonts/firefox.run
 fi
