@@ -110,7 +110,7 @@ echo '<li><div class="collapsible-header">' $"Widevine"
    echo '<span class="tooltipped" data-position="top" data-delay="50" data-tooltip="Este plugin adiciona suporte a DRM nos navegadores, por questões de licenciamento, ele não pode vir instalado no sistema, porém, ao abrir o navegador Firefox, o mesmo faz o download do plugin automaticamente. É necessário para abrir sites com conteúdo DRM, entre eles, os mais conhecidos são: Netflix, Amazon Prime Vídeo e Spotify.">'
    
     
-if [ -e "/home/matheus/.mozilla/firefox/afo5sto0.default/gmp-widevinecdm/4.10.1582.2/libwidevinecdm.so" ]; then
+if [ -e "$HOME/.mozilla/firefox/*.default/gmp-widevinecdm/*/libwidevinecdm.so" ]; then
     echo '<span class="badge">' $"Instalado" '</span>'
     echo '</div><div class="collapsible-body"><p>'
     echo '<center>'
@@ -122,7 +122,7 @@ else
     echo $"Para adicionar este plugin no navegador Chromium, abra o Firefox por alguns minutos, pois ele fará o download do Widevine automaticamente, então abra o Chromium, uma janela irá perguntar se deve adicionar o plugin baixado pelo Firefox."
     echo '<br><center>'
     echo '<a href="install-apps-wait.sh.htm?install_widevine=1" class="blue-text text-darken-4">'
-    echo $"Este plugin não está ativo no navegador Firefox, clique aqui para testar e após reiniciar o PC, abra o Chromium." '</label></a></center>'
+    echo $"O plugin não está ativo no Firefox. Clique aqui para testá-lo." '</label></a></center>'
 fi
     
 echo '</p></div></li>'
