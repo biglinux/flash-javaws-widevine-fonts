@@ -110,19 +110,19 @@ echo '<li><div class="collapsible-header">' $"Widevine"
    echo '<span class="tooltipped" data-position="top" data-delay="50" data-tooltip="Este plugin adiciona suporte a DRM nos navegadores, por questões de licenciamento, ele não pode vir instalado no sistema, porém, ao abrir o navegador Firefox, o mesmo faz o download do plugin automaticamente. É necessário para abrir sites com conteúdo DRM, entre eles, os mais conhecidos são: Netflix, Amazon Prime Vídeo e Spotify.">'
    
     
-if [ -e "/usr/lib/chromium-browser/libwidevinecdm.so" ]; then
+if [ -e "/home/matheus/.mozilla/firefox/afo5sto0.default/gmp-widevinecdm/4.10.1582.2/libwidevinecdm.so" ]; then
     echo '<span class="badge">' $"Instalado" '</span>'
     echo '</div><div class="collapsible-body"><p>'
     echo '<center>'
-    echo '<a href="install-apps-wait.sh.htm?remove_widevine=1" class="blue-text text-darken-4">' $"O plugin já está ativo no navegador Chromium.<br>Clique aqui para remove-lo." '</label></a></center>'
+    echo '<a href="install-apps-wait.sh.htm?remove_widevine=1" class="blue-text text-darken-4">' $"O plugin já está ativo no navegador Firefox.<br>Clique aqui para remove-lo." '</label></a></center>'
 else
     echo '<span class="badge">' $"Não está instalado" '</span>'
     echo '</div><div class="collapsible-body"><p>'
     echo $"Este plugin adiciona suporte a DRM nos navegadores, por questões de licenciamento, ele não pode vir instalado no sistema, porém, ao abrir o navegador Firefox, o mesmo faz o download do plugin automaticamente. É necessário em sites com conteúdo DRM, entre eles, os mais conhecidos são: Netflix, Amazon Prime Vídeo e Spotify." '<p>'
     echo $"Para adicionar este plugin no navegador Chromium, abra o Firefox por alguns minutos, pois ele fará o download do Widevine automaticamente, então abra o Chromium, uma janela irá perguntar se deve adicionar o plugin baixado pelo Firefox."
     echo '<br><center>'
-    echo "<a onclick=\"_run('./firefox.run')\">"
-    echo $"Este plugin não está ativo no navegador Chromium, clique aqui para testar no Firefox." '</label></a></center>'
+    echo '<a href="install-apps-wait.sh.htm?install_widevine=1" class="blue-text text-darken-4">'
+    echo $"Este plugin não está ativo no navegador Firefox, clique aqui para testar e após reiniciar o PC, abra o Chromium." '</label></a></center>'
 fi
     
 echo '</p></div></li>'

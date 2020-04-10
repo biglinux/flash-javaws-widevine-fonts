@@ -60,6 +60,10 @@ if [ "$p_install_javaws" = "1" ]; then
     bigsudo /usr/share/bigbashview/bcc/apps/flash-javaws-widevine-fonts/apps-manage.sh install-javaws
 fi
 
+if [ "$p_install_widevine" = "1" ]; then
+   /usr/share/bigbashview/bcc/apps/flash-javaws-widevine-fonts/apps-manage.sh install-widevine
+fi
+
 
 # Start javascript
 echo '<script type="text/javascript">
