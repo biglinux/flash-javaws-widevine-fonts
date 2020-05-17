@@ -13,7 +13,7 @@ xprop -id $(xprop -root '\t$0' _NET_ACTIVE_WINDOW | cut -f 2) -f WM_CLASS 8s -se
 
 
 #Title/Description variables
-bcc_title=$"Widevine, javaws, flash e fontes"
+bcc_title=$"Widevine, flash e fontes"
 bcc_description=$""
 # To disable logo use: bcc_logo="no"
 bcc_logo="logo.png"
@@ -110,44 +110,20 @@ echo '<li><div class="collapsible-header">' $"Widevine"
    echo '<span class="tooltipped" data-position="top" data-delay="50" data-tooltip="Este plugin adiciona suporte a DRM nos navegadores, por questões de licenciamento, ele não pode vir instalado no sistema, porém, ao abrir o navegador Firefox, o mesmo faz o download do plugin automaticamente. É necessário para abrir sites com conteúdo DRM, entre eles, os mais conhecidos são: Netflix, Amazon Prime Vídeo e Spotify.">'
    
     
-if [ -e "$HOME/.mozilla/firefox/*.default/gmp-widevinecdm/*/libwidevinecdm.so" ]; then
-    echo '<span class="badge">' $"Instalado" '</span>'
+    echo '<span class="badge">' $"Informações" '</span>'
     echo '</div><div class="collapsible-body"><p>'
-    echo '<center>'
-    echo '<a href="install-apps-wait.sh.htm?remove_widevine=1" class="blue-text text-darken-4">' $"O plugin já está ativo no navegador Firefox.<br>Clique aqui para remove-lo." '</label></a></center>'
-else
-    echo '<span class="badge">' $"Não está instalado" '</span>'
-    echo '</div><div class="collapsible-body"><p>'
-    echo $"Este plugin adiciona suporte a DRM nos navegadores, por questões de licenciamento, ele não pode vir instalado no sistema, porém, ao abrir o navegador Firefox, o mesmo faz o download do plugin automaticamente. É necessário em sites com conteúdo DRM, entre eles, os mais conhecidos são: Netflix, Amazon Prime Vídeo e Spotify." '<p>'
-    echo $"Para adicionar este plugin no navegador Chromium, abra o Firefox por alguns minutos, pois ele fará o download do Widevine automaticamente, então abra o Chromium, uma janela irá perguntar se deve adicionar o plugin baixado pelo Firefox."
+    echo $"Este plugin adiciona suporte a DRM nos navegadores, um recurso utilizado por alguns sites, por exemplo, Netflix, Spotify e Amazon Prime Vídeos. Por questões de licenciamento, ele não pode vir instalado no sistema."
+    echo '<p>' $"No navegador Firefox este plugin é instalado automaticamente ao abrir uma página que o utilize, o que não ocorre no navegador Chromium, porém, ele pode utilizar o plugin do Firefox."
+    echo '<p>' $"Para adicionar o plugin no navegador Chromium, abra o Firefox em uma página que utilize DRM e aguarde que seja feita a instalação ou atualização automática do Widevine. Ao concluir abra o navegador Chromium."
+    echo '<p>' $"Outra alternativa para ter suporte ao Widevine no Chromium é instalar o navegador Google Chrome."
     echo '<br><center>'
     echo '<a href="install-apps-wait.sh.htm?install_widevine=1" class="blue-text text-darken-4">'
-    echo $"O plugin não está ativo no Firefox. Clique aqui para testá-lo." '</label></a></center>'
+    echo $"Para abrir uma página que utiliza DRM clique aqui." '</label></a></center>'
 fi
     
 echo '</p></div></li>'
 
 
-echo '<li><div class="collapsible-header">' $"Javaws"
-
-
-if [ -e "/usr/lib/icedtea-web/bin/javaws" ] ; then
-    echo '<span class="badge">' $"Instalado" '</span>'
-    echo '</div><div class="collapsible-body"><p><center>'
-          echo $"Também chamado de Icedtea ou Netx, abre arquivos no formato JNLP."
-          echo "<br><br>"
-          
-       echo '<a href="install-apps-wait.sh.htm?config_javaws=1" class="blue-text text-darken-4">' $"Este plugin já está instalado, clique aqui para configurar." '</label></a>'
-    else
-    echo '<span class="badge">' $"Não está instalado" '</span>'
-    echo '</div><div class="collapsible-body"><p>'
-    echo $"Também chamado de Icedtea ou Netx, abre arquivos no formato JNLP."
-    echo "<br><br>"
-          
-       echo '<a href="install-apps-wait.sh.htm?install_javaws=1" class="blue-text text-darken-4">' $"Clique aqui para instalar este plugin." '</label></a>'
-fi
-
-echo '</p></div></li>'
 
 
 

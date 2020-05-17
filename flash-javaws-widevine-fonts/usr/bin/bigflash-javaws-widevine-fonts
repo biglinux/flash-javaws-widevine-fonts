@@ -1,2 +1,16 @@
 #!/bin/bash
-bigbashview /usr/share/bigbashview/bcc/apps/flash-javaws-widevine-fonts/index.sh.htm -s 1050x600 -i /usr/share/bigbashview/bcc/apps/flash-javaws-widevine-fonts/logo.png
+
+if [ "${LANG:0:2}" = "pt" ]
+then
+    BIGBASHVIEW_LANG="pt"
+    
+elif [ "${LANG:0:2}" = "es" ]
+then
+    BIGBASHVIEW_LANG="es"
+    
+else
+    BIGBASHVIEW_LANG="en"
+fi
+
+
+LANGUAGE=$BIGBASHVIEW_LANG bigbashview /usr/share/bigbashview/bcc/apps/flash-javaws-widevine-fonts/index.sh.htm -s 1050x600 -i /usr/share/bigbashview/bcc/apps/flash-javaws-widevine-fonts/logo.png
