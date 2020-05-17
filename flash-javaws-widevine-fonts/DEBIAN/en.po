@@ -41,10 +41,10 @@ msgstr "Wait..."
 
 #, fuzzy
 msgid "Widevine, flash e fontes"
-msgstr "Widevine, javaws, flash and fonts"
+msgstr "Widevine, flash and fonts"
 
 msgid "Fontes"
-msgstr "Microsoft TrueType core fonts"
+msgstr "Fonts"
 
 msgid "Instalado"
 msgstr "Installed"
@@ -60,7 +60,7 @@ msgid "Clique aqui para remover o pacote Microsoft True Type Core Fonts."
 msgstr "Click here to remove the Microsoft True Type Core Fonts package."
 
 msgid "Não está instalado"
-msgstr "Is not installed"
+msgstr "It is not installed"
 
 msgid "Instalar o pacote Microsoft True Type Core Fonts"
 msgstr "Install the Microsoft True Type Core Fonts Package"
@@ -78,33 +78,44 @@ msgid "Widevine"
 msgstr "Widevine"
 
 msgid "Informações"
-msgstr ""
+msgstr "Information"
 
 msgid ""
 "Este plugin adiciona suporte a DRM nos navegadores, um recurso utilizado por "
 "alguns sites, por exemplo, Netflix, Spotify e Amazon Prime Vídeos. Por "
 "questões de licenciamento, ele não pode vir instalado no sistema."
 msgstr ""
+"This plugin adds support for DRM in browsers, a feature used by"
+"some sites, for example, Netflix, Spotify and Amazon Prime Videos."
+"By licensing issues, it couldn't come installed on the system."
 
 msgid ""
 "No navegador Firefox este plugin é instalado automaticamente ao abrir uma "
 "página que o utilize, o que não ocorre no navegador Chromium, porém, ele "
 "pode utilizar o plugin do Firefox."
 msgstr ""
+"In the Firefox browser, this plugin is automatically installed when you open a"
+"page that uses it, which doesn't happen in the Chromium browser, however, it"
+"can use the Firefox plugin."
 
 msgid ""
 "Para adicionar o plugin no navegador Chromium, abra o Firefox em uma página "
 "que utilize DRM e aguarde que seja feita a instalação ou atualização "
 "automática do Widevine. Ao concluir abra o navegador Chromium."
 msgstr ""
+"To add the plugin in the Chromium browser, open Firefox on a page"
+"that uses DRM and waits for the installation or automatic update of Widevine"
+"to take place. When finished open the Chromium browser."
 
 msgid ""
 "Outra alternativa para ter suporte ao Widevine no Chromium é instalar o "
 "navegador Google Chrome."
 msgstr ""
+"Another alternative to support Widevine on Chromium is to install"
+"Google Chrome browser."
 
 msgid "Para abrir uma página que utiliza DRM clique aqui."
-msgstr ""
+msgstr "To open a page that uses DRM click here."
 
 #~ msgid ""
 #~ "O plugin já está ativo no navegador Chromium.<br>Clique aqui para remove-"
