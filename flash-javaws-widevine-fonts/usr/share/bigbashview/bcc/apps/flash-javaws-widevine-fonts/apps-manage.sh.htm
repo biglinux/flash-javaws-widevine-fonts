@@ -32,35 +32,35 @@ bcc_header
 # Start Content
 
 
-if [ "$p_install_font" = "1" ]; then
+if [ "$install_font" = "1" ]; then
     bigsudo /usr/share/bigbashview/bcc/apps/flash-javaws-widevine-fonts/apps-manage.sh install-font
 fi
 
-if [ "$p_remove_font" = "1" ]; then
+if [ "$remove_font" = "1" ]; then
     bigsudo /usr/share/bigbashview/bcc/apps/flash-javaws-widevine-fonts/apps-manage.sh remove-font
 fi
 
-if [ "$p_install_flash" = "1" ]; then
+if [ "$install_flash" = "1" ]; then
     bigsudo /usr/share/bigbashview/bcc/apps/flash-javaws-widevine-fonts/apps-manage.sh install-flash
 fi
 
-if [ "$p_remove_flash" = "1" ]; then
+if [ "$remove_flash" = "1" ]; then
     bigsudo /usr/share/bigbashview/bcc/apps/flash-javaws-widevine-fonts/apps-manage.sh remove-flash
 fi
 
-if [ "$p_remove_widevine" = "1" ]; then
+if [ "$remove_widevine" = "1" ]; then
     bigsudo /usr/share/bigbashview/bcc/apps/flash-javaws-widevine-fonts/apps-manage.sh remove-widevine
 fi
 
-if [ "$p_config_javaws" = "1" ]; then
+if [ "$config_javaws" = "1" ]; then
     /usr/share/bigbashview/bcc/apps/flash-javaws-widevine-fonts/apps-manage.sh config-javaws
 fi
 
-if [ "$p_install_javaws" = "1" ]; then
+if [ "$install_javaws" = "1" ]; then
     bigsudo /usr/share/bigbashview/bcc/apps/flash-javaws-widevine-fonts/apps-manage.sh install-javaws
 fi
 
-if [ "$p_install_widevine" = "1" ]; then
+if [ "$install_widevine" = "1" ]; then
    /usr/share/bigbashview/bcc/apps/flash-javaws-widevine-fonts/apps-manage.sh install-widevine
 fi
 
